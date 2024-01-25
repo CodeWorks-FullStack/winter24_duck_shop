@@ -31,7 +31,7 @@ input[type="radio"] {
   accent-color: var(--theme);
 }
 
-.fancy{
+.fancy {
   color: white;
   text-shadow: 1px 1px 0 black;
   font-family: 'Kavoon', serif;
@@ -49,7 +49,8 @@ input[type="radio"] {
   position: absolute;
   top: 68%;
 }
-.shop-row{
+
+.shop-row {
   margin-top: 125px;
 }
 
@@ -58,13 +59,17 @@ input[type="radio"] {
     position: unset;
   }
 
-  .shop-row{
+  .shop-row {
     margin-top: 1.5em;
   }
 
-  .hero{
+  .hero {
     background-image: url(https://images.unsplash.com/photo-1570586790305-4f115cb439c6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   }
 
+
+  .product img {
+    height: 375px;
+  }
 
 }
