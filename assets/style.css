@@ -18,6 +18,14 @@ main{
 }
 
 
+.product img{
+  height: 175px;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+
 
 .hero{
   min-height: 76.45vh;
