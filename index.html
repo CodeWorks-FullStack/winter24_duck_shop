@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/style.css">
   <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
     defer></script>
+
 </head>
 
 <body class="debug">
@@ -56,7 +57,47 @@
         <div class="col-md-3 col-xl-2 bg-success">
           <div class="card my-2 my-md-4">
             <div class="card-body">
-              Form goes here
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="Search" placeholder="Swim, Fly, potato">
+                  <label for="Search">Search</label>
+                </div>
+
+                <div class="my-2">
+                  <label for="price">Price:</label>
+                  <input name="price" id="price" type="range">
+                </div>
+
+                <div>
+                  <label for="color">Color:</label>
+                  <div class="d-flex flex-column ps-4">
+                    <div class="d-flex justify-content-between">
+                      <span>red</span>
+                      <input type="radio" name="color" id="color-red" value="red">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span>green</span>
+                      <input type="radio" name="color" id="color-green" value="green">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span>yellow</span>
+                      <input type="radio" name="color" id="color-yellow" value="yellow">
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="my-2">
+                  <label for="category">Category</label>
+                  <select name="category" id="category" class="form-control">
+                    <option value="swim">swim</option>
+                    <option value="fly">fly</option>
+                    <option value="rubber">rubber</option>
+                  </select>
+                </div>
+
+
+              </form>
             </div>
           </div>
         </div>

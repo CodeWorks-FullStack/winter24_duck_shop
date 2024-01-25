@@ -25,6 +25,9 @@ main{
 }
 
 
+input[type="range"],input[type="radio"] {
+  accent-color: var(--theme);
+}
 
 
 .hero{
