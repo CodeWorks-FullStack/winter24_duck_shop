@@ -1,35 +1,70 @@
-:root{
+:root {
   --theme: #F1E04C;
 }
 
-body{
+body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-header, footer{
+header,
+footer {
   background-color: var(--theme);
 }
 
 
-main{
+main {
   flex-grow: 1;
 }
 
 
-.product img{
+.product img {
   height: 175px;
   object-fit: cover;
   object-position: top;
 }
 
 
-input[type="range"],input[type="radio"] {
+input[type="range"],
+input[type="radio"] {
   accent-color: var(--theme);
 }
 
+.fancy{
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  font-family: 'Kavoon', serif;
+}
 
-.hero{
+
+.hero {
   min-height: 76.45vh;
+  background-image: url(https://images.unsplash.com/photo-1563164591-b1090dfc5ae3?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: top;
+}
+
+.hero-card {
+  position: absolute;
+  top: 68%;
+}
+.shop-row{
+  margin-top: 125px;
+}
+
+@media screen AND (max-width: 768px) {
+  .hero-card {
+    position: unset;
+  }
+
+  .shop-row{
+    margin-top: 1.5em;
+  }
+
+  .hero{
+    background-image: url(https://images.unsplash.com/photo-1570586790305-4f115cb439c6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  }
+
+
 }
